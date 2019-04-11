@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.lzj.dagger2.activity.cat.DaggerCatComponent;
 import com.lzj.dagger2.activity.cat.OrangeCat;
+import com.lzj.dagger2.activity.utils.IntentUtil;
 
 import javax.inject.Inject;
 
@@ -21,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
         //第一种方式
         DaggerCatComponent.create().inject(this);
         //第二种方式
-       // DaggerCatComponent.builder().build().inject(this);
+        // DaggerCatComponent.builder().build().inject(this);
+
+        IntentUtil.IntenToActivity(this,SecondActivity.class);
 
         String context=orangeCat.eat();
 

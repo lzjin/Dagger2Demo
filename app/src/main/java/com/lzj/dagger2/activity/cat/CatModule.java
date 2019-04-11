@@ -5,7 +5,7 @@ import dagger.Provides;
 
 /**
  * Created by lzj on 2019/4/10
- * Describe ：注释
+ * Describe ：有第三方库时 才使用
  */
 //第一步 添加@Module 注解
 @Module
@@ -16,8 +16,4 @@ public class CatModule {
         return new OrangeCat();
     }
 
-//    @Provides
-//    OrangeCat providerCat(PersianCat persianCat) {
-//        return new OrangeCat(persianCat);
-//    }
 }

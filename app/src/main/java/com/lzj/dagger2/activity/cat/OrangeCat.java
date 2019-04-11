@@ -5,11 +5,6 @@ package com.lzj.dagger2.activity.cat;
  * Describe ：注释
  */
 public class OrangeCat {
-//
-//    public OrangeCat(PersianCat persianCat) {
-//
-//    }
-
 
     public String  eat() {
         return "橘猫爱吃鱼!";
